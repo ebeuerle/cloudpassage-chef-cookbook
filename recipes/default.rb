@@ -20,7 +20,7 @@ else
     proxy_string_win = ""
 end
 # Next we determine the server tag string
-if node[:cloudpassage][:proxy_url] != "" then
+if node[:cloudpassage][:tag] != "" then
     tag_string_lin = "--tag=#{node[:cloudpassage][:tag]}"
     tag_string_win = "/tag=#{node[:cloudpassage][:tag]}"
 else
